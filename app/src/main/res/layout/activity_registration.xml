@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/title_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.NoticeApp.PopupOverlay"
+                app:titleTextColor="@color/white" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:minWidth="@dimen/input_minwidth"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Student Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:minWidth="@dimen/input_minwidth"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Institute Email ID"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:minWidth="@dimen/input_minwidth"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Department" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:entries="@array/academic_array"
+                android:minWidth="@dimen/input_minwidth"
+                android:minHeight="45dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:minWidth="@dimen/input_minwidth"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/roll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Student Roll No."
+                    android:inputType="number"
+                    android:minWidth="@dimen/input_minwidth" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:minWidth="@dimen/input_minwidth" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_cpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:minWidth="@dimen/input_minwidth"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cpasswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Register"
+                android:minWidth="@dimen/btn_minwidth"
+                android:minHeight="65dp"
+                android:padding="10dp"
+                android:text="@string/action_register"
+                app:cornerRadius="@dimen/activity_btn_radius" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

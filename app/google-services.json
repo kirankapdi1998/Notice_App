@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "844385200428",
+    "project_id": "noticeapp-d486e",
+    "storage_bucket": "noticeapp-d486e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844385200428:android:75114589f50f40275de489",
+        "android_client_info": {
+          "package_name": "com.example.noticeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844385200428-bhplrk76tms89hc7kjkev22auic15c92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJJrz3t00asUJJLtH8o7AkWxqqF7H0aqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844385200428-bhplrk76tms89hc7kjkev22auic15c92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
